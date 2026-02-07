@@ -1,0 +1,88 @@
+body{
+                background-color: #0a0e14;
+                color: aqua;
+                font-family: sans-serif;
+}
+
+.network-map{
+        position:relative; 
+        width: 100vw ;
+        height: 100vh ;
+        background-repeat: repeat;
+         background-image: 
+         linear-gradient(90deg, rgb(238, 120, 238, 0.1) 1px,transparent 1px), 
+         linear-gradient(rgb(238, 120, 238,0.1) 2px,transparent  2px); 
+         background-size: 40px 40px;  
+}
+
+
+.device{
+        width: 150px ;
+        height: 80px ;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(65, 138, 138, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform:translate(-50% -50%) ;
+}
+
+.server{
+        top: 40%;
+        left: 50%;
+}
+
+.firewall{
+        top: 40% ;
+        left: 20%;
+}
+
+.branch{
+        top: 20%;
+        left: 75%;
+}
+
+.srv-fw{
+        top: 46% ;
+        left: 30%;
+        position: absolute;
+        height: 4px;
+        width: 19.8%;
+        background-size: 400px 100%;
+        background-image:linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: left center;
+        transform: rotate(0deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+
+}
+
+.srv-branch{
+        top:40% ;
+        left: 44.2%;
+        position: absolute;
+        height: 4px;
+        width: 240px;
+        background-size: 480px 100%;
+        background-image: linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: right center ;
+        transform: rotate(165deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+}
+
+
+
+@keyframes lamp {
+        0% {
+        background-position: 0% center;
+        }
+        100% {
+        background-position: 200% center;
+        }
+}
