@@ -8,27 +8,46 @@
 </head>
 <body>
     <div class="network-map">
-    <h1 class="map-title">Siber Güvenlik İzleme Paneli</h1>
+        <h1 class="map-title">Siber Güvenlik İzleme Paneli</h1>
+        <button class="defense-btn" onclick="mitigateAttack()">AKTİF SAVUNMA: DDoS ENGELLE</button>
+
+        <div class="device internet">
+            <span>Internet / Cloud</span>
+        </div>
+        <div class="line internet-fw"></div>
+
+        <div class="attack-alert">
+            <h1> ATTACK DETECTED </h1>
+            <p>HIGH VOLUME TRAFFIC FROM CLOUD SOURCE</p>
+        </div>
 
     <div class="device server">
-        <span>🖥️ Merkez Sunucu</span>
+        <span>Merkez Sunucu</span>
+    </div>
+    <div class="device database"><span>Database</span>
+    </div>
+    <div class="line srv-db">
     </div>
     <div class="device firewall">
-    <span>🛡️ Firewall</span>
+         <span>Firewall</span>
     </div>
-
-    <div class="device branch">
-    <span>🏢 Ankara Şube</span>
+    <div class="line srv-fw"></div>
+     <div class="device branch ankara"> 
+        <span>Ankara Şube</span>
     </div>
-
-    <div class="line srv-fw">
-
+    <div class="line srv-branch"></div> 
+    <div class=" device izmir">
+        <span>İzmir Şube</span>
     </div>
-
-    <div class="line srv-branch">
-
+    <div class="line izmirr"></div> 
+    <div class="device bursa">
+        <span>Bursa Şube</span>
     </div>
-
+    <div class="line bursaa ">
+    </div>
+    <div class="device antalya">
+        <span>Antalya Şube</span></div>
+    <div class="line antalyaa"></div>
 
 </div>
 

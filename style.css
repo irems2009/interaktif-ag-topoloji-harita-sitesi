@@ -45,6 +45,37 @@ body{
         left: 75%;
 }
 
+.izmir{
+        top:45%;
+        left: 75%;
+}
+
+.bursa{
+        top: 10%;
+        left: 50%;
+}
+
+.antalya{
+        top:75%;
+        left: 50%;
+}
+
+.srv-db{
+        top: 15%; 
+        left: 10%; 
+        position: absolute;
+        height: 4px;
+        width: 637px;
+        background-size: 400px 100%;
+        background-image:linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: left center;
+        transform: rotate(16deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+
+}
+
 .srv-fw{
         top: 46% ;
         left: 30%;
@@ -63,7 +94,7 @@ body{
 
 .srv-branch{
         top:40% ;
-        left: 44.2%;
+        left: 44%;
         position: absolute;
         height: 4px;
         width: 240px;
@@ -77,6 +108,191 @@ body{
 }
 
 
+.izmirr{
+        top:45% ;
+        left: 44.5%;
+        position: absolute;
+        height: 4px;
+        width: 235px;
+        background-size: 480px 100%;
+        background-image: linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: right center ;
+        transform: rotate(190deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+}
+
+.bursaa{
+        top: 30.5% ;
+        left: 50%;
+        position: absolute;
+        height: 4px;
+        width: 126px;
+        background-size: 480px 100%;
+        background-image: linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: center ;
+        transform: rotate(90deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+}
+
+.antalyaa{
+        top:51.5% ;
+        left: 44%;
+        position: absolute;
+        height: 4px;
+        width: 162px;
+        background-size: 480px 100%;
+        background-image: linear-gradient(90deg, aqua 40%, white 50%, aqua 60%);
+        transform-origin: right center ;
+        transform: rotate(270deg);
+        z-index: -1;
+        animation: lamp 2s linear infinite;
+        box-shadow: 0 0 10px rgba(104, 243, 243, 0.8);
+}
+
+
+.firewall:hover + .srv-fw{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+
+.branch:hover + .srv-branch{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+.izmir:hover + .izmirr{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+.bursa:hover + .bursaa{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+.antalya:hover + .antalyaa{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+
+.database:hover + .srv-db{
+        background-image: linear-gradient(90deg, rgb(207, 13, 13) 40%, white 50%, rgb(207, 13, 13)  60%) !important;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9) !important ;
+}
+
+
+.map-title{
+        padding-left: 30px;
+        padding-right: 10px;
+        width: fit-content;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid aqua;
+        animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+        margin: 20px auto;
+}
+
+.internet {
+    top: 40%;
+    left: 3%;
+    border-color: #ff00ff; 
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+.internet-fw {
+    top: 46%;
+    left: 13%;
+    position: absolute;
+    height: 4px;
+    width: 117px;
+    background-image: linear-gradient(90deg, #ff00ff 40%, white 50%, #ff00ff 60%);
+    background-size: 400px 100%;
+    z-index: -1;
+    animation: lamp 1.5s linear infinite; 
+}
+
+.internet:hover ~ .line,
+.internet:hover ~ [class*="srv-"],
+.internet:hover ~ [class*="line-"] {
+    background-image: linear-gradient(90deg, red 40%, white 50%, red 60%) !important;
+    box-shadow: 0 0 20px red !important;
+}
+
+.attack-alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    padding: 30px 60px;
+    border: 5px solid white;
+    border-radius: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    pointer-events: none; 
+}
+
+.attack-alert h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.internet:hover ~ .attack-alert {
+    display: block;
+    animation: alert-blink 0.5s infinite alternate;
+}
+
+.defense-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px 25px;
+    background-color: #00ff00; 
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    z-index: 2000;
+    transition: all 0.3s ease;
+}
+
+.defense-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #00ff00;
+}
+
+
+.mitigated .line, 
+.mitigated [class*="srv-"], 
+.mitigated [class*="line-"] {
+    background-image: linear-gradient(90deg, #00ff00 40%, white 50%, #00ff00 60%) !important;
+    animation: lamp 1.5s linear infinite !important;
+    box-shadow: 0 0 15px #00ff00 !important;
+}
+
+
+
+@keyframes typing{
+        from{
+                width: 0;
+        } to{
+                width: 100%;
+        }
+}
+
+@keyframes blink{
+        50%{
+                background-color: transparent;
+        }
+}
+
+
 
 @keyframes lamp {
         0% {
@@ -85,4 +301,9 @@ body{
         100% {
         background-position: 200% center;
         }
+}
+
+@keyframes alert-blink {
+    from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    to { opacity: 0.7; transform: translate(-50%, -50%) scale(1.05); }
 }
