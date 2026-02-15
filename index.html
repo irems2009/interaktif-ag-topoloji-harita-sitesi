@@ -9,17 +9,26 @@
 <body>
     <div class="network-map">
         <h1 class="map-title">Siber Güvenlik İzleme Paneli</h1>
-        <button class="defense-btn" onclick="mitigateAttack()">AKTİF SAVUNMA: DDoS ENGELLE</button>
+        <button class="savunma-buton" 
+        onclick="mitigateAttack()">AKTİF SAVUNMA: DDoS ENGELLE
+        </button>
 
         <div class="device internet">
             <span>Internet / Cloud</span>
         </div>
         <div class="line internet-fw"></div>
 
-        <div class="attack-alert">
+        <div class="atak-warning">
             <h1> ATTACK DETECTED </h1>
             <p>HIGH VOLUME TRAFFIC FROM CLOUD SOURCE</p>
         </div>
+        <div class="log-terminal" id="logTerminal">
+        <div class="terminal-header">SYSTEM LOGS - SOC TERMINAL</div>
+        <div class="log-content" id="logContent">
+            <div>> System initialized...</div>
+            <div>> Network status: SECURE</div>
+        </div>
+    </div>
 
     <div class="device server">
         <span>Merkez Sunucu</span>
@@ -51,6 +60,6 @@
 
 </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

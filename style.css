@@ -219,7 +219,7 @@ body{
     box-shadow: 0 0 20px red !important;
 }
 
-.attack-alert {
+.atak-warning {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -235,18 +235,18 @@ body{
     pointer-events: none; 
 }
 
-.attack-alert h1 {
+.atak-warning h1 {
     margin: 0;
     font-size: 3rem;
     letter-spacing: 5px;
 }
 
-.internet:hover ~ .attack-alert {
+.internet:hover ~ .atak-warning {
     display: block;
-    animation: alert-blink 0.5s infinite alternate;
+    animation: uyarı 0.5s infinite alternate;
 }
 
-.defense-btn {
+.savunma-buton {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -262,7 +262,7 @@ body{
     transition: all 0.3s ease;
 }
 
-.defense-btn:hover {
+.savunma-buton:hover {
     transform: scale(1.1);
     box-shadow: 0 0 30px #00ff00;
 }
@@ -276,6 +276,37 @@ body{
     box-shadow: 0 0 15px #00ff00 !important;
 }
 
+
+.log-terminal {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid aqua;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.terminal-header {
+    background-color: aqua;
+    color: black;
+    padding: 3px 10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.log-content {
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto; 
+}
 
 
 @keyframes typing{
@@ -303,7 +334,21 @@ body{
         }
 }
 
-@keyframes alert-blink {
+@keyframes uyarı {
     from { opacity: 1; transform: translate(-50%, -50%) scale(1); }
     to { opacity: 0.7; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+
+@media (max-width: 1000px) {
+    .line {
+        display: none; 
+    }
+    
+    .device {
+        width: 120px; 
+        font-size: 12px;
+    }
+    
+    .izmirr { width: 150px; } 
 }
